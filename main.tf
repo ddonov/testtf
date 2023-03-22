@@ -16,6 +16,6 @@ resource "random_string" "random" {
 output "random-uuid" {
   value = uuid()
 }
-
 output "random-string" {
-  value 
+  value = random_string.random.id
+}
